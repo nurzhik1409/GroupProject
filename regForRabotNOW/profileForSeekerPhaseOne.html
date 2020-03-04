@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Анкета соискателя</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <form action = 'profileForSeekerPhaseTwo.php' method='POST'>
+            <h1>Анкета</h1>
+
+            <h3>Ожидания</h3>
+                <p>Зарплата от:</p>
+                    <input type = "text" name = "zpot" />
+                <p>Зарплата до:</p>
+                    <input type = "text" name = "zpdo" />
+                <p>График работы:</p>
+                    <select name="graph">
+                        <option value="Свободный">Свободный</option>
+                        <option value="Вахтовый">Вахтовый</option>
+                        <option value="Полный">Полный</option>
+                        <option value="Неполный">Неполный</option>
+                    </select>
+
+            <h3>Личные данные</h3>
+                <p>Пол</p>
+                    <select name="gender">
+                        <option value="Муж">Мужчина</option>
+                        <option value="Жен">Женщина</option>
+                    </select>
+                <p>Количество детей</p>
+                    <input type="number" name = "baby_count" value="0"/>
+                <p>Семейное положение</p>
+                    <input type="text" name="maried" />
+                <p>Цели</p>
+                    <textarea name = "aim" style="height: 80px; width:170px;"></textarea>
+
+            <h3>Дополнительные профессиональные качества</h3>
+                <p>Умение работать с компьютером</p>
+                    <textarea name="PC_skills"></textarea>
+                <p>Знание иностранных языков</p>
+                    <textarea name="Knowlege_languages"></textarea>
+                <p>Дополнительное образование</p>
+                    <textarea name="Addition_education"></textarea>
+            <h3>Заслуги</h3>
+                <p>Наличие грамот (можно ссылки)</p>
+                    <textarea name="gramota"></textarea>
+                <p>Наличие сертификатов (можно ссылки)</p>
+                    <textarea name="sertifikat"></textarea>
+                <p></p>
+            <input type = "submit" value="Продолжить"/>
+        </form>
+    </body>
+</html>
